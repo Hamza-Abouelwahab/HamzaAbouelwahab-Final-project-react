@@ -1,3 +1,4 @@
+import { Carousel } from "../../../components/caousel"
 
 export const HeroSection = () => {
     
@@ -5,7 +6,7 @@ export const HeroSection = () => {
 
     return (
         <>
-
+            <Carousel/>
 
         </>
     )

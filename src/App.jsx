@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home'
 import ContentAbout from './pages/about'
+import Header from './layout/header'
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
   return (
     <>
     
-
+      <Header/>
+      
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<ContentAbout/>}/>
