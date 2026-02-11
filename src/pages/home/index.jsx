@@ -1,11 +1,13 @@
 
-import { HeroSection } from './partials/content';
+import { Carousel } from '../../components/caousel';
+import {  Moduls } from './partials/content';
 
 
 const Home = () => {
     return (
         <>
-            <HeroSection/> 
+            <Carousel/>
+            <Moduls/> 
         </>
     );
 };

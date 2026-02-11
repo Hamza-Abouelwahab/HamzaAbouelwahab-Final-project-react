@@ -3,11 +3,12 @@ import { FaFacebookF, FaGooglePlusG, FaInstagram, FaRegUserCircle, FaTwitter } f
 import { FaSquarePinterest } from 'react-icons/fa6';
 import ImagesConstant from '../constant';
 import { GrShop } from 'react-icons/gr';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div>
-            <div className="bg-black/5 py-2 px-10 flex items-center justify-between">
+            <div className="bg-black/5 py-2 px-10   flex items-center  justify-between">
                 <nav className='flex gap-3 items-center'>
                     <a href=""><FaFacebookF size={20} className='text-black/50 hover:text-red-400' /></a> 
                     <a href=""><FaTwitter size={20} className='text-black/50 hover:text-red-400' /></a>
@@ -28,23 +29,23 @@ const Header = () => {
                 </div>
             </div>
             {/* footer of Header */}
-            <div className="py-6 sticky w-full bg-amber-100 px-12 flex items-center justify-between ">
+            <div className="py-6  w-full bg-amber-100 px-12 flex items-center  justify-between ">
                 <div className="">
                     <img src={ImagesConstant.logo} alt="" />
                 </div>
                 <div className=' flex gap-15 w-150 justify-center'>
-                    <a href="" className='hover:border-b' >Home</a>
-                    <a href="" className='hover:border-b' >Shop</a>
-                    <a href="" className='hover:border-b' >Blog</a>
-                    <a href="" className='hover:border-b' >About</a>
-                    <a href="" className='hover:border-b' >Contact</a>
+                    <Link to="/" className='hover:border-b' >Home</Link>
+                    <Link to="/shop" className='hover:border-b' >Shop</Link>
+                    <Link to="/blog" className='hover:border-b' >Blog</Link>
+                    <Link to="/about" className='hover:border-b' >About</Link>
+                    <Link to="/contact" className='hover:border-b' >Contact</Link>
                 </div>
                 <div className="flex items-center gap-4">
                     <FaRegUserCircle size={25} className='text-black/50' />
                     <p className='bg-black/30 px-[0.4px] h-5 '></p>
-                    <div className="">
+                    <div className="relative">
                     <GrShop size={25} className='text-black/50' />
-                        <p className='bg-black w-5 h-5 text-white flex justify-center items-center'>0</p>
+                        <p className='bg-black absolute top-0 -right-1.5 w-4 h-4 text-white rounded-4xl text-xs flex justify-center items-center'>0</p>
                     </div>
                 </div>
             </div>

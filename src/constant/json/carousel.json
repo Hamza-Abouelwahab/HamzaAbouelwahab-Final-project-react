@@ -2,9 +2,9 @@
     {
         "id" : 1 ,
         "image" :[
-            "../../assets/images/carousel1.jpg" ,
-            "../../assets/images/carousel2.jpg" ,
-            "../../assets/images/carousel3.webp"
+            "../assets/images/carousel1.jpg" ,
+            "../assets/images/carousel2.jpg" ,
+            "../assets/images/carousel3.webp"
             
         ] ,
         "title" : "New Arrivals",
