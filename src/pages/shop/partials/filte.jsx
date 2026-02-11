@@ -4,7 +4,7 @@ import { IoIosSearch } from 'react-icons/io';
 
 const Filte = () => {
     return (
-        <div className='w-[40vw] space-y-2.5 '>
+        <div className='w-[25vw] space-y-2.5 '>
             <div className="space-y-1">
                 <h1 className='text-xl font-extrabold'>Categories</h1>
                 <p className='text-black/80'>Best Seller (8 items)</p>
@@ -41,8 +41,8 @@ const Filte = () => {
                     <input type="checkbox" className='w-3.25 h-3.25 border border-black/80 rounded cursor-pointer ' />
                     <label htmlFor="" className='text-[17px] text-black/80'>XL</label>
                 </div>
-                <div className="mt-6 relative  w-fit">
-                    <input className='outline-0 border border-black/20 px-2 py-4' type="search" placeholder='Search...' />
+                <div className="mt-6 relative border w-55">
+                    <input className='outline-0 border w-full border-black/20 px-2 py-4' type="search" placeholder='Search...' />
                     <IoIosSearch className='text-black/80 absolute right-0 top-1/2 -translate-1/2'/>
                 </div>
             </div>
