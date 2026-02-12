@@ -29,7 +29,7 @@ const Header = () => {
                 </div>
             </div>
             {/* footer of Header */}
-            <div className="py-6  w-full bg-amber-100 px-12 flex items-center  justify-between ">
+            <div className="py-6  w-full  px-12 flex items-center  justify-between ">
                 <div className="">
                     <img src={ImagesConstant.logo} alt="" />
                 </div>

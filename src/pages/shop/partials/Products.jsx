@@ -1,6 +1,7 @@
 import React from 'react';
 import CardShop from '../../../components/cardShop';
 import images from '../../../constant/images/images';
+import Btn from '../../../components/button';
 
 const Products = () => {
     return (

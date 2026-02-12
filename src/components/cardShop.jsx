@@ -1,9 +1,10 @@
 import React from 'react';
+import Btn from './button';
 
-const CardShop = ({img , title , price , }) => {
+const CardShop = ({img , title , price ,  }) => {
     return (
-        <div>
-            <div className="w-[22vw] h-[70vh]">
+        <div className={``}>
+            <div className={`w-[22vw] h-[70vh]  `} >
                 <img className='w-full h-full object-cover' src={img} alt="" />
             </div>
             <div className="">
