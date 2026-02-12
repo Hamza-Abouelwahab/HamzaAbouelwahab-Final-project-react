@@ -2,7 +2,7 @@ import React from 'react';
 import images from '../../../constant/images/images';
 import { motion } from 'motion/react';
 import { Scale } from '../../../animations/animation';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import { FaAngleRight, FaArrowRightLong } from 'react-icons/fa6';
 
 const Featured = () => {
     return (
@@ -30,6 +30,11 @@ const Featured = () => {
             <button className='hover:cursor-pointer'>Continue Reading</button>
             <FaArrowRightLong/>
             </div>
+            </div>
+            <div className="flex items-center gap-2">
+                <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-white/30  text-white bg-black '>1</p>
+                <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-black/30 '>2</p>
+                <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-black/30 text-black/80 '><FaAngleRight/></p>
             </div>
         </div>
     );

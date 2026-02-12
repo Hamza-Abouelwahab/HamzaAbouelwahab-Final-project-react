@@ -2,6 +2,7 @@ import React from 'react';
 import CardShop from '../../../components/cardShop';
 import images from '../../../constant/images/images';
 import Btn from '../../../components/button';
+import { FaAngleRight } from 'react-icons/fa6';
 
 const Products = () => {
     return (
@@ -35,6 +36,11 @@ const Products = () => {
             <CardShop img={images.shopy5} title="Boxy4 T-Shirt with Roll Sleeve Detail" price="$20.00" />
             <CardShop img={images.shopy7} title="Boxy5 T-Shirt with Roll Sleeve Detail" price="$20.00" />
         </div>
+                    <div className="flex items-center gap-2">
+                        <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-white/30  text-white bg-black '>1</p>
+                        <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-black/30 '>2</p>
+                        <p className='border w-8 h-8 rounded-full flex justify-center items-center text-xl border-black/30 text-black/80 '><FaAngleRight/></p>
+                    </div>
         </div>
     );
 };

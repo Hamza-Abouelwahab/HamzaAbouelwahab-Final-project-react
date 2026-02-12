@@ -8,7 +8,7 @@ const Blog = () => {
     return (
         <div>
             <PartHeroSection img={images.carousel3} title="NEWS" />
-            <div className="my-15 px-5">
+            <div className="my-15 px-5 flex gap-8">
                 <Featured/>
                 <Products/>
             </div>
