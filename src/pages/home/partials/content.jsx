@@ -3,6 +3,7 @@ import { motion } from "motion/react"
 import { Scale } from "../../../animations/animation"
 import { Link } from "react-router-dom"
 import Btn from "../../../components/button"
+import Carousel2 from "../../../components/Carousel2"
 
 
 export const Moduls = () => {
@@ -49,7 +50,7 @@ export const Moduls = () => {
         <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">ACCESSORIES</Link>
   </div>
             </div>
-
+    <Carousel2/>
             {/* section */}
 
             <div className="flex gap-8 py-15 px-5 bg-[#f2f2f2]">

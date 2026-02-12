@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaSearch, FaSearchDollar } from 'react-icons/fa';
 import { IoIosSearch } from 'react-icons/io';
 
 const Filte = () => {

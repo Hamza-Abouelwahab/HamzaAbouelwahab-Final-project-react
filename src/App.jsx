@@ -6,6 +6,7 @@ import Header from './layout/header'
 import Footer from './layout/footer'
 import Shop from './pages/shop'
 import Blog from './pages/blog'
+import ContactSection from './pages/contact'
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/about' element={<ContentAbout/>}/>
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/blog' element={<Blog/>}/>
+        <Route path='/contact' element={<ContactSection/>}/>
       </Routes>
       
       <Footer/>
