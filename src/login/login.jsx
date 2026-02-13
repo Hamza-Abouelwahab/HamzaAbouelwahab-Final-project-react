@@ -2,7 +2,7 @@ import React from 'react';
 import { FaAngleRight } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Account = () => {
     return (
         <div className='px-12 py-8'>
             <div className="flex gap-2 text-xs pb-8 text-black/80   items-center ">
@@ -43,4 +43,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Account;

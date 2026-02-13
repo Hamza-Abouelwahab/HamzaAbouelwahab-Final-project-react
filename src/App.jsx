@@ -7,8 +7,9 @@ import Footer from './layout/footer'
 import Shop from './pages/shop'
 import Blog from './pages/blog'
 import ContactSection from './pages/contact'
-import Login from './login/login'
 import GreatAccont from './login/partials/register'
+import Account from './login/login'
+import BackToTopBtn from './layout/backToTopBtn'
 
 
 function App() {
@@ -24,12 +25,12 @@ function App() {
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/contact' element={<ContactSection/>}/>
-        <Route path='/account' element={<Login/>} />
+        <Route path='/account' element={<Account/>} />
         <Route path='/account/register' element={<GreatAccont/>} />
       </Routes>
       
       <Footer/>
-    
+      <BackToTopBtn/>
     
     </>
   )
