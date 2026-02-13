@@ -10,7 +10,7 @@ const Login = () => {
                 <Link  className='' to="/">Home</Link>
                 <p>&gt;</p>
                 </div>
-                <a className='hover:text-red-400 transition duration-300' href='/login'>Account</a>
+                <a className='hover:text-red-400 transition duration-300' href='/account'>Account</a>
             </div>
             <div className="w-full flex gap-5">
                 <div className=" border border-black/20 h-fit  w-[50vw] p-4">
@@ -18,7 +18,7 @@ const Login = () => {
                     <span className=' text-black/50 font-bold'>Register Account</span>
                     <p className='w-120 py-4 text-black/50'>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</p>
                     <div className="">
-                        <button className='bg-black text-white px-8 cursor-pointer py-2'>CONTINUE</button>
+                        <Link to="/account/register" className='bg-black text-white px-8 cursor-pointer py-2'>CONTINUE</Link>
                     </div>
                 </div>
                 {/* right side */}

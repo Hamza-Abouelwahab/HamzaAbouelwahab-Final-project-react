@@ -8,6 +8,7 @@ import Shop from './pages/shop'
 import Blog from './pages/blog'
 import ContactSection from './pages/contact'
 import Login from './login/login'
+import GreatAccont from './login/partials/register'
 
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
         <Route path='/shop' element={<Shop/>}/>
         <Route path='/blog' element={<Blog/>}/>
         <Route path='/contact' element={<ContactSection/>}/>
-        <Route path='/login' element={<Login/>} />
+        <Route path='/account' element={<Login/>} />
+        <Route path='/account/register' element={<GreatAccont/>} />
       </Routes>
       
       <Footer/>
