@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { IoIosSearch } from 'react-icons/io';
 
-const Filte = () => {
+const Filte = ({onSearch}) => {
+
+
+    
+
     return (
         <div className='w-[25vw] space-y-2.5 '>
             <div className="space-y-1">
@@ -41,7 +45,9 @@ const Filte = () => {
                     <label htmlFor="" className='text-[17px] text-black/80'>XL</label>
                 </div>
                 <div className="mt-6 relative border w-55">
-                    <input className='outline-0 border w-full border-black/20 px-2 py-4' type="search" placeholder='Search...' />
+                    <input
+                    onChange={(e)=> onSearch(e.target.value)}
+                    className='outline-0 border w-full border-black/20 px-2 py-4' type="search" placeholder='Search...' />
                     <IoIosSearch className='text-black/80 absolute right-0 top-1/2 -translate-1/2'/>
                 </div>
             </div>

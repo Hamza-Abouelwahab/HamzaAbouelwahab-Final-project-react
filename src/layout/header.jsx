@@ -77,7 +77,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 border-b"
-                : "text-black hover:text-red-400"
+                : "text-black/50  hover:text-red-400"
             }
           >
             Home
@@ -88,7 +88,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 border-b"
-                : "text-black hover:text-red-400"
+                : "text-black/50  hover:text-red-400"
             }
           >
             Shop
@@ -99,7 +99,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 border-b"
-                : "text-black hover:text-red-400"
+                : "text-black/50  hover:text-red-400"
             }
           >
             Blog
@@ -110,7 +110,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 border-b"
-                : "text-black hover:text-red-400"
+                : "text-black/50  hover:text-red-400"
             }
           >
             About
@@ -121,7 +121,7 @@ const Header = () => {
             className={({ isActive }) =>
               isActive
                 ? "text-red-500 border-b"
-                : "text-black hover:text-red-400"
+                : "text-black/50  hover:text-red-400"
             }
           >
             Contact

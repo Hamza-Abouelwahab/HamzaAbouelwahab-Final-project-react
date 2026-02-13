@@ -7,8 +7,8 @@ import Footer from './layout/footer'
 import Shop from './pages/shop'
 import Blog from './pages/blog'
 import ContactSection from './pages/contact'
-import GreatAccont from './login/partials/register'
-import Account from './login/login'
+import Account from './pages/login/login'
+import GreatAccont from './pages/login/partials/register'
 import BackToTopBtn from './layout/backToTopBtn'
 
 

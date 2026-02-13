@@ -31,7 +31,7 @@ const CartToAdd = () => {
 
                     <div className="flex-1">
                         <h4 className="font-medium text-sm text-gray-800 line-clamp-1">{item.title}</h4>
-                        <p className="text-gray-500 text-xs mt-1">{item.quantity } x {item.price}</p>
+                        <p className="text-gray-500 text-xs mt-1">{item.quantity } x ${item.price}</p>
                     <button 
                         key={index}
                         onClick={() => removeFromCart(index)}
@@ -50,7 +50,7 @@ const CartToAdd = () => {
                     <span>Subtotal :</span>
                     <span>
                         ${cart.reduce((total, item) => {
-                            const price = parseFloat(item.price.replace('$', ''))
+                            const price = parseFloat(item.price)
                             return total + (price * (item.quantity || 1))}, 0).toFixed(2)}
                     </span>
                 </div>
