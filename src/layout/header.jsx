@@ -47,7 +47,10 @@ const Header = () => {
                     <Link to="/contact" className='hover:text-red-400 transition'>Contact</Link>
                 </div>
                 <div className="flex items-center gap-4">
+                    <Link to="/login" className="">
+
                     <FaRegUserCircle size={25} className='text-black/50 cursor-pointer hover:text-black transition' />
+                    </Link>
                     <p className='bg-black/30 w-px h-5 '></p>
                     
                     <div className="relative cursor-pointer" onClick={() => setIsOpen(true)}>

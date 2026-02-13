@@ -8,10 +8,19 @@ const Context = ({children}) => {
     
 
     const addToCart = (product) => {
-        
-        setCart( (prev) => [...prev , product])
+  setCart((prevCart) => {
+    const isProductInCart = prevCart.find((item) => item.title === product.title);
 
+    if (isProductInCart) {
+      return prevCart.map((item) =>
+        item.title === product.title 
+          ? { ...item, quantity: item.quantity + 1 } 
+          : item
+      );
     }
+    return [...prevCart, { ...product, quantity: 1 }];
+  });
+};
     
     useEffect(()=>{
        console.log(addToCart);
