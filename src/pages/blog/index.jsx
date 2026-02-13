@@ -3,8 +3,10 @@ import PartHeroSection from '../../components/heroSection';
 import images from '../../constant/images/images';
 import Featured from './partials/Featured';
 import Products from './partials/Products';
+import { useAppContext } from '../../context/Context';
 
 const Blog = () => {
+            
     return (
         <div>
             <PartHeroSection img={images.carousel3} title="NEWS" />
@@ -12,6 +14,7 @@ const Blog = () => {
                 <Featured/>
                 <Products/>
             </div>
+            
         </div>
     );
 };
