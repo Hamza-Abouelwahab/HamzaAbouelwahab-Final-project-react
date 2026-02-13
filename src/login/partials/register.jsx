@@ -16,7 +16,7 @@ const GreatAccont = () => {
                 <h1 className='text-5xl'>Greate Account</h1>
                 <p className='text-black/70 text-xl pt-2'>Your Personal Details</p>
                 
-                <div className="flex flex-col space-y-2 py-5 w-220">
+                <div className="flex flex-col space-y-2 py-5 pl-4 w-220">
                     <label htmlFor="">First Name</label>
                     <input className='outline-0 border border-black/20 p-2' type="text" placeholder='First Name' />
                     <label htmlFor="">Last Name</label>

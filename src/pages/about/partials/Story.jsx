@@ -1,4 +1,6 @@
+import { Scale } from "../../../animations/animation";
 import images from "../../../constant/images/images";
+import { motion } from "motion/react";
 
 const Story = () => {
   return (
@@ -6,8 +8,12 @@ const Story = () => {
       <div className="flex gap-6 items-center">
         
         
-        <div className="w-[30vw] ">
-          <img
+        <div className="w-[30vw] overflow-hidden">
+          <motion.img
+            variants={Scale} 
+            initial='rest'
+            whileHover='hover'
+            transition='transition'
             src={images.shopy4}
             alt="Our Story"
             className="w-full h-auto object-cover"

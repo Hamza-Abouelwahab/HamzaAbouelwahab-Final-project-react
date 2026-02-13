@@ -7,8 +7,8 @@ import { FaAngleRight, FaArrowRightLong } from 'react-icons/fa6';
 const Featured = () => {
     return (
         <div className='w-[70vw] '>
-            <div className=" w-[70vw] flex justify-center ">
-            <motion.img variants={Scale} initial="rest" whileHover="hover" src={images.blog01} alt="" />
+            <div className=" w-[70vw] flex justify-center overflow-hidden ">
+            <motion.img variants={Scale} initial="rest" whileHover="hover" transition="transition" src={images.blog01} alt="" />
             </div>
             <div className="my-10  space-y-3">
             <h1 className='text-2xl font-bold my-5'>Black Friday Guide: Best Sales & Discount Codes</h1>
@@ -19,8 +19,8 @@ const Featured = () => {
             <FaArrowRightLong/>
             </div>
             </div>
-            <div className=" w-[70vw] flex justify-center ">
-            <motion.img variants={Scale} initial="rest" whileHover="hover" src={images.blog02} alt="" />
+            <div className=" w-[70vw] flex justify-center overflow-hidden ">
+            <motion.img variants={Scale} initial="rest" whileHover="hover" transition="transition" src={images.blog02} alt="" />
             </div>
             <div className="my-10  space-y-3">
             <h1 className='text-2xl font-bold my-5'>The White Sneakers Nearly Every Fashion Girls Own</h1>
