@@ -6,7 +6,7 @@ const CardShop = ({ img, title, price }) => {
     const {addToCart} = useAppContext()
   return (
 
-    <div className="group ">
+    <div className="group">
 
       <div className="w-full h-[70vh] relative overflow-hidden">
         <img className="w-full h-full object-cover" src={img} alt={title} />

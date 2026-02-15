@@ -8,7 +8,8 @@ const Context = ({children}) => {
     
 
     const addToCart = (product) => {
-  setCart((prevCart) => {
+
+    setCart((prevCart) => {
     const isProductInCart = prevCart.find((item) => item.title === product.title);
 
     if (isProductInCart) {

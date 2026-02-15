@@ -1,6 +1,5 @@
 import React from 'react';
 import { useAppContext } from '../context/Context';
-import { FaTrashAlt } from 'react-icons/fa'; // زدت ليك أيقونة المسح
 
 const CartToAdd = () => {
     const { cart, setCart } = useAppContext(); 
@@ -31,7 +30,7 @@ const CartToAdd = () => {
 
                     <div className="flex-1">
                         <h4 className="font-medium text-sm text-gray-800 line-clamp-1">{item.title}</h4>
-                        <p className="text-gray-500 text-xs mt-1">{item.quantity } x ${item.price}</p>
+                        <p className="text-gray-500 text-xs mt-1">{item.quantity } x {item.price}</p>
                     <button 
                         key={index}
                         onClick={() => removeFromCart(index)}
@@ -46,13 +45,21 @@ const CartToAdd = () => {
 
             
             <div className="mt-4">
-                <div className="flex justify-end items-center gap-1.5 text-black/60  text-lg">
-                    <span>Subtotal :</span>
+                <div className="flex justify-end items-center  text-black/60  text-lg">
+                    <span>Subtotal : $</span>
                     <span>
-                        ${cart.reduce((total, item) => {
-                            const price = parseFloat(item.price)
-                            return total + (price * (item.quantity || 1))}, 0).toFixed(2)}
-                    </span>
+                        {cart.reduce((total, item) => {
+                            const cleanPrice = typeof item.price === 'string' 
+                            ? item.price.replace(/[^0-9.]/g,'')
+                            : item.price
+                            const price = parseFloat(cleanPrice)
+                            const quantity = parseInt(item.quantity ) || 1
+                            console.log("Cleaned Price:", cleanPrice, "Parsed Price:", price);
+                                if (isNaN(price)) return total
+                                console.log(total + (price * quantity)) 
+                            return  total + (price * quantity) 
+                            },0).toFixed(2)}
+                    </span> 
                 </div>
             </div>
         </div>

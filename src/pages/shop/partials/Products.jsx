@@ -1,6 +1,5 @@
 import React from 'react';
 import CardShop from '../../../components/cardShop';
-import images from '../../../constant/images/images';
 import { FaAngleRight } from 'react-icons/fa6';
 
 
@@ -34,7 +33,7 @@ const Products = ({items}) => {
         {
             items.map((item)=>
             <>
-            <CardShop key={item.id} img={item.image} title={item.title} price={`$${item.price}`} />
+            <CardShop key={item.id} img={item.image} title={item.title} price={`$${item.price}.00`} />
             </>
             )
         }
