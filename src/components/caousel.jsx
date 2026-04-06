@@ -1,5 +1,6 @@
 import { useState } from "react";
-import  CarouselJson  from "../constant/json/carousel.json";
+import CarouselJson from "../constant/json/carousel.json";
+import images from "../constant/images/images.jsx";
 
 
 // const images = [
@@ -12,9 +13,9 @@ export const Carousel = () => {
 
     
   const [current, setCurrent] = useState(0);
-  const data = CarouselJson[0]; 
-  const images = data.image;
-  const length = images.length;
+  const data = CarouselJson[0];
+  const carouselImages = [images.carousel1, images.carousel2, images.carousel3];
+  const length = carouselImages.length;
 
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
@@ -32,10 +33,7 @@ export const Carousel = () => {
         className="flex transition-transform duration-700 ease-in-out"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
-     {images.map((imgName, index) => {
-  const imageUrl = new URL(imgName, import.meta.url).href;
-
-  return (
+    {carouselImages.map((imageUrl, index) => (
     <div key={index} className="min-w-full h-125 relative">
       <div className="absolute z-10 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col gap-2 items-center left-1/2 p-2 text-white">
         <p className="text-white text-3xl font-extralight">{data.paragraphe}</p>
@@ -46,15 +44,9 @@ export const Carousel = () => {
           </button>
         </div>
       </div>
-      
-      <img
-        src={imageUrl} 
-        alt="slide"
-        className="w-full h-125 object-cover"
-      />
+      <img src={imageUrl} alt="slide" className="w-full h-125 object-cover" />
     </div>
-  );
-})}
+    ))}
       </div>
       <button onClick={prevSlide} className="absolute top-1/2 text-white bg-black/50 hover:bg-red-400 flex justify-center items-center cursor-pointer h-8 w-8 rounded-2xl left-15 ..."> ❮ </button>
       <button onClick={nextSlide} className="absolute top-1/2 text-white bg-black/50 hover:bg-red-400 flex justify-center items-center cursor-pointer h-8 w-8 rounded-2xl right-15 ..."> ❯ </button>
