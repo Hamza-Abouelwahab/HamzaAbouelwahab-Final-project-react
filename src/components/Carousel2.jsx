@@ -4,6 +4,7 @@ import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import images from "../constant/images/images";
+import { useAppContext } from "../context/Context";
 
 
 function Carousel2() {
@@ -19,6 +20,7 @@ function Carousel2() {
   ];
 
   const [hoveredIndex, setHoveredIndex] = useState(null);
+  const { addToCart } = useAppContext();
 
   return (
     <div className="relative max-w-[90vw] mx-auto px-4 py-16">
@@ -59,9 +61,12 @@ function Carousel2() {
                 }`}
               >
                 {hoveredIndex === index && (
-                  <button className="bg-black absolute bottom-3  hover:bg-blend-screen hover:bg-[#E65540] text-[17px] font-light text-white px-10 py-2 rounded-full transition duration-300">
-                      ADD TO CARD
-                      </button>
+                  <button
+                    onClick={() => addToCart(product)}
+                    className="bg-black absolute bottom-3 hover:bg-[#E65540] text-[17px] font-light text-white px-10 py-2 rounded-full transition duration-300"
+                  >
+                    ADD TO CART
+                  </button>
                 )}
               </div>
 

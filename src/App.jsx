@@ -19,6 +19,7 @@ function App() {
     
 
       <Header/>
+      <div className="pt-[65px] lg:pt-[105px]">
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<ContentAbout/>}/>
@@ -28,6 +29,7 @@ function App() {
         <Route path='/account' element={<Account/>} />
         <Route path='/account/register' element={<GreatAccont/>} />
       </Routes>
+      </div>
       
       <Footer/>
       <BackToTopBtn/>

@@ -14,7 +14,7 @@ const Shop = () => {
     return (
         <>
             <PartHeroSection img={images.bannerWebp} title="Products"/>
-            <div className="my-10 w-full flex  px-5">
+            <div className="my-10 w-full flex flex-col md:flex-row px-5">
             <Filte onSearch={handleSearch} />
             <Products items={filteredItems} />
             </div>

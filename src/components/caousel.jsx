@@ -26,7 +26,7 @@ export const Carousel = () => {
   };
 
   return (
-    <div className="relative w-full h-125 overflow-hidden">
+    <div className="relative w-full h-64 sm:h-96 md:h-125 overflow-hidden">
       
       {/* Slides Wrapper */}
       <div
@@ -34,17 +34,17 @@ export const Carousel = () => {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
     {carouselImages.map((imageUrl, index) => (
-    <div key={index} className="min-w-full h-125 relative">
+    <div key={index} className="min-w-full h-64 sm:h-96 md:h-125 relative">
       <div className="absolute z-10 top-1/2 -translate-y-1/2 -translate-x-1/2 flex flex-col gap-2 items-center left-1/2 p-2 text-white">
-        <p className="text-white text-3xl font-extralight">{data.paragraphe}</p>
-        <h1 className="text-8xl text-white ">{data.title}</h1>
+        <p className="text-white text-sm sm:text-xl md:text-3xl font-extralight">{data.paragraphe}</p>
+        <h1 className="text-3xl sm:text-5xl md:text-8xl text-white">{data.title}</h1>
         <div className="flex justify-center">
           <button className="mt-4 bg-white rounded-4xl cursor-pointer text-xl text-black px-6 py-2">
             {data.btn}
           </button>
         </div>
       </div>
-      <img src={imageUrl} alt="slide" className="w-full h-125 object-cover" />
+      <img src={imageUrl} alt="slide" className="w-full h-64 sm:h-96 md:h-125 object-cover" />
     </div>
     ))}
       </div>

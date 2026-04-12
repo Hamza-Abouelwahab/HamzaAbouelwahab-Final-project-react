@@ -15,37 +15,37 @@ export const Moduls = () => {
 
     return (
         <>
-            <div className="my-10 px-5 grid grid-cols-3 grid-rows-2 gap-4 h-200">
+            <div className="my-10 px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-auto lg:grid-rows-2 gap-4 lg:h-200">
   
   
-  <motion.div  className="row-span-2 relative group overflow-hidden">
+  <motion.div className="sm:row-span-2 relative group overflow-hidden h-64 sm:h-auto">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[0]} className="w-full h-full object-cover" alt="Dresses" />
     <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">DRESSES</Link>
   </motion.div>
 
   
-  <div className="col-span-1 relative group overflow-hidden">
+  <div className="col-span-1 relative group overflow-hidden h-64 sm:h-auto">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[1]} className="w-full h-full object-cover" alt="Watches" />
     <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">WATCHES</Link>
   </div>
 
   
-  <div className="col-span-1 row-span-2 relative group overflow-hidden">
+  <div className="col-span-1 sm:row-span-2 relative group overflow-hidden h-64 sm:h-auto">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[2]} className="w-full h-full object-cover" alt="Shoes" />
     <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">FOOTWEAR</Link>
   </div>
 
-  <div className="row-span-2 relative group overflow-hidden" >
+  <div className="sm:row-span-2 relative group overflow-hidden h-64 sm:h-auto">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[4]} className="w-full h-full object-cover" alt="FOOTERWEAR" />
         <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">FOOTERWEAR</Link>
   </div>
 
-  <div className="row-span-1 relative group overflow-hidden">
+  <div className="row-span-1 relative group overflow-hidden h-64">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[3]} className="w-full h-full object-cover" alt="SUNGLASSES" />
     <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">SUNGLASSES</Link>
   </div>
 
-  <div className="row-span-1 relative group overflow-hidden" >
+  <div className="row-span-1 relative group overflow-hidden h-64">
     <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition' src={card[5]} className="w-full h-full object-cover" alt="ACCESSORIES" />
         <Link to="/shop" className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 hover:bg-red-400 transition-all duration-300 cursor-pointer px-8 py-2">ACCESSORIES</Link>
   </div>
@@ -53,7 +53,7 @@ export const Moduls = () => {
     <Carousel2/>
             {/* section */}
 
-            <div className="flex gap-8 py-15 px-5 bg-[#f2f2f2]">
+            <div className="flex flex-col md:flex-row gap-8 py-15 px-5 bg-[#f2f2f2]">
               <div className="relative overflow-hidden">
                 <motion.img variants={Scale} initial="rest" whileHover="hover" transition='transition'  src={images.banner08} alt="" />
                 <div className="absolute top-1/2 left-1/2 -translate-1/2 space-y-2 text-white text-center">
@@ -89,7 +89,7 @@ export const Moduls = () => {
             </div>
 
             {/* section Our Blog */}
-            <div className="flex gap-8 py-15 px-5 items-center">
+            <div className="flex flex-col md:flex-row gap-8 py-15 px-5 items-center">
               <CartBlog img={images.blog01} title="Black Friday Guide: Best Sales & Discount Codes" span="by fashe-theme Admin on Dec 28,2017" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..." />
               <CartBlog img={images.blog02} title="Black Friday Guide: Best Sales & Discount Codes" span="by fashe-theme Admin on Dec 28,2017" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..." />
               <CartBlog img={images.blog03} title="Black Friday Guide: Best Sales & Discount Codes" span="by fashe-theme Admin on Dec 28,2017" p="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed turpis sed lorem dignissim vulputate nec cursus ante. Nunc sit..." />

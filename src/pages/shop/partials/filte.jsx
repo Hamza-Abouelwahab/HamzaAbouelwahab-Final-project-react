@@ -7,7 +7,7 @@ const Filte = ({onSearch}) => {
     
 
     return (
-        <div className='w-[25vw] space-y-2.5 '>
+        <div className='w-full md:w-[25vw] space-y-2.5'>
             <div className="space-y-1">
                 <h1 className='text-xl font-extrabold'>Categories</h1>
                 <p className='text-black/80'>Best Seller (8 items)</p>

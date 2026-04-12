@@ -5,10 +5,10 @@ import { motion } from "motion/react";
 const Story = () => {
   return (
     <section className="max-w-full px-5 py-16">
-      <div className="flex gap-6 items-center">
+      <div className="flex flex-col md:flex-row gap-6 items-center">
         
         
-        <div className="w-[30vw] overflow-hidden">
+        <div className="w-full md:w-[30vw] overflow-hidden">
           <motion.img
             variants={Scale} 
             initial='rest'
@@ -21,7 +21,7 @@ const Story = () => {
         </div>
 
         
-        <div className=" w-[70vw]">
+        <div className="w-full md:w-[70vw]">
           <h2 className="text-4xl font-light mb-6">Our story</h2>
           
           <p className="text-gray-500 leading-8 text-[17px]">
@@ -40,7 +40,7 @@ const Story = () => {
             ligula ac ligula. Vivamus tristique vulputate ultricies. Sed vitae
             ultrices orci.
           </p>
-          <div className="pt-4 flex items-center  justify-center text-gray-500 w-155">
+          <div className="pt-4 flex items-center justify-center text-gray-500 w-full">
           <p className=" pl-8 w-full">Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn't really do it, they just saw something. It seemed obvious to them after a while. <br/> <br /> - Steve Job’s</p>
 
           </div>

@@ -10,7 +10,7 @@ const Blog = () => {
     return (
         <div>
             <PartHeroSection img={images.carousel3} title="NEWS" />
-            <div className="my-15 px-5 flex gap-8">
+            <div className="my-15 px-5 flex flex-col md:flex-row gap-8">
                 <Featured/>
                 <Products/>
             </div>
